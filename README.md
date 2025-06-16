@@ -1,3 +1,4 @@
+This project is for educational and non-commercial purposes only. It is an open-source project and is not affiliated with or endorsed by Shopee. All trademarks and brand assets are the property of their respective owners.
 # React + TypeScript + Vite
 
 # Dự án Shopee Clone Typescript
