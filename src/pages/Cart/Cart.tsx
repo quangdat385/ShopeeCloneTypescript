@@ -15,6 +15,7 @@ import { produce } from 'immer';
 import { Purchase } from 'src/types/purchase.type';
 import { toast } from 'react-toastify';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 
 function Cart() {
   const { t } = useTranslation('user');
@@ -149,6 +150,10 @@ function Cart() {
 
   return (
     <div className='bg-neutral-100 py-16'>
+      <Helmet>
+        <title>{t('cart.title')} | Đạt Nguyễn Shop</title>
+        <meta name='description' content={'Giỏ hàng của bạn'} />
+      </Helmet>
       <div className='container'>
         {extendedPurchases.length > 0 ? (
           <>

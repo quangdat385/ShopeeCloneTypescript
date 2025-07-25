@@ -85,8 +85,8 @@ function Register() {
   return (
     <div className='bg-orange'>
       <Helmet>
-        <title>Đăng ký | Shopee Clone</title>
-        <meta name='description' content='Đăng ký tài khoản vào dự án Shopee Clone' />
+        <title>Đăng ký | Đạt Nguyễn Shop</title>
+        <meta name='description' content='Đăng ký tài khoản vào dự án Đạt Nguyễn Shop' />
       </Helmet>
       <div className='container'>
         <div className='grid grid-cols-1 py-12 lg:grid-cols-5 lg:py-32 lg:pr-10'>

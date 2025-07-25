@@ -30,8 +30,8 @@ function ProductList() {
   return (
     <div className='bg-200 py-6'>
       <Helmet>
-        <title>Trang chủ | Shopee Clone</title>
-        <meta name='description' content='Trang chủ dự án Shopee Clone' />
+        <title>Trang chủ | Dạt Nguyễn Shop</title>
+        <meta name='description' content='Trang chủ dự án Dạt Nguyễn Shop' />
       </Helmet>
       <div className='container'>
         {productsData && (

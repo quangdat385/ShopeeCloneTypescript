@@ -15,6 +15,7 @@ import { setProfileToLS } from 'src/utils/auth';
 import { toast } from 'react-toastify';
 import { ErrorResponse } from 'src/types/utils.type';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 
 type FormData = Pick<UserSchema, 'name' | 'address' | 'phone' | 'date_of_birth' | 'avatar'>;
 type FormDataError = Omit<FormData, 'date_of_birth'> & {
@@ -151,6 +152,10 @@ function Profile() {
 
   return (
     <div className='rounded-sm bg-white px-2 pb-10 shadow md:px-7 md:pb-20'>
+      <Helmet>
+        <title>{t('user details.profile')} | Đạt Nguyễn Shop</title>
+        <meta name='description' content={t('user details.policy')} />
+      </Helmet>
       <div className='border-b border-b-gray-200 py-6'>
         <h1 className='text-lg font-medium capitalize text-gray-900'>{t('user details.profile')}</h1>
         <div className='mt-1 text-sm text-gray-700'>{t('user details.policy')}</div>

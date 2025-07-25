@@ -12,6 +12,7 @@ import omit from 'lodash/omit';
 import { useMutation } from '@tanstack/react-query';
 import userApi from 'src/apis/user.api';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 
 type FormData = NoUndefinedField<Pick<UserSchema, 'password' | 'new_password' | 'confirm_password'>>;
 const passwordSchema = userSchema.pick(['password', 'new_password', 'confirm_password']);
@@ -56,6 +57,10 @@ function ChangePassword() {
   });
   return (
     <div className='rounded-sm bg-white px-2 pb-10 shadow md:px-7 md:pb-20'>
+      <Helmet>
+        <title>{t('user details.change password')} | Đạt Nguyễn Shop</title>
+        <meta name='description' content={t('user details.policy')} />
+      </Helmet>
       <div className='border-b border-b-gray-200 py-6'>
         <h1 className='text-lg font-medium capitalize text-gray-900'>{t('user details.change password')}</h1>
         <div className='mt-1 text-sm text-gray-700'>{t('user details.policy')}</div>
